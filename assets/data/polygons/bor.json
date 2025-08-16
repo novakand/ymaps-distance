@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Бор, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 184775388,
+          "osm_type": "node",
+          "osm_id": 356482960,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Бор, городской округ Бор, Нижегородская область, Приволжский федеральный округ, 606440, Россия",
+          "name": "Бор",
+          "postcode": "606440",
+          "county": "городской округ Бор",
+          "state": "Нижегородская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "городской округ Бор",
+            "level4": "Нижегородская область",
+            "level3": "Приволжский федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q105360",
+            "wikipedia": "ru:Бор (Нижегородская область)",
+            "population": "78145",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0542641,
+          56.3598289
+        ]
+      }
+    }
+  ]
+}

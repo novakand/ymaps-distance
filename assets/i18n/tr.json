@@ -1,0 +1,35 @@
+{
+  "transport": "Ulaşım",
+  "date": "Tarih",
+  "time": "Saat",
+  "trackTime": "Zamanı takip et",
+  "coordinates": "Koordinatlar",
+  "altitude": "İrtifa",
+  "speed": "Hız",
+  "online": "Çevrimiçi",
+  "history": "Geçmiş",
+  "settings": "Ayarlar",
+  "language": "Dil",
+  "style": "Harita stili",
+  "darkMode": "Karanlık mod",
+  "maps": {
+   "trackAltitudeLegend": "İrtifa",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "Parkur",
+    "waypoints": "Ara Noktalar",
+    "autoPan": "Otomatik Kaydırma"
+  },
+   "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "Görüntülenecek veri yok",
+          "detail": "Lütfen farklı bir zaman dilimi seçin."
+        }
+      }
+    }
+  
+}

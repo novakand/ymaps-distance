@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Миньяр, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 187478924,
+          "osm_type": "node",
+          "osm_id": 1463122111,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Миньяр, Миньярское городское поселение, Ашинский район, Челябинская область, Уральский федеральный округ, 456007, Россия",
+          "name": "Миньяр",
+          "postcode": "456007",
+          "city": "Миньярское городское поселение",
+          "county": "Ашинский район",
+          "state": "Челябинская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level8": "Миньярское городское поселение",
+            "level6": "Ашинский район",
+            "level4": "Челябинская область",
+            "level3": "Уральский федеральный округ"
+          },
+          "extra": {
+            "ele": "165",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Г._Миньяр_.jpg",
+            "wikidata": "Q159041",
+            "wikipedia": "ru:Миньяр",
+            "okato:user": "75209503",
+            "population": "9017",
+            "start_date": "1771",
+            "contact:website": "http://minyar-city.ru",
+            "official_status": "ru:город"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.5485021,
+          55.0709139
+        ]
+      }
+    }
+  ]
+}

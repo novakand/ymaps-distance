@@ -1,0 +1,34 @@
+{
+  "transport": "Vận chuyển",
+  "date": "Ngày",
+  "time": "Giờ",
+    "trackTime": "Theo dõi thời gian",
+  "coordinates": "Tọa độ",
+  "altitude": "Độ cao",
+  "speed": "Tốc độ",
+  "online": "Trực tuyến",
+  "history": "Lịch sử",
+  "settings": "Cài đặt",
+  "language": "Ngôn ngữ",
+  "style": "Kiểu bản đồ",
+  "darkMode": "Chế độ tối",
+  "maps": {
+   "trackAltitudeLegend": "Độ cao",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "Đường đi",
+    "waypoints": "Điểm dừng",
+    "autoPan": "Tự động di chuyển"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "Không có dữ liệu để hiển thị",
+          "detail": "Vui lòng chọn khoảng thời gian khác."
+        }
+      }
+    }
+}

@@ -1,0 +1,22 @@
+.layout-primarycolor-menu {
+    --logo-color: var(--p-primary-contrast-color);
+    --menu-bg: var(--p-primary-color);
+    --root-menuitem-text-color: var(--p-primary-contrast-color);
+    --menuitem-text-color: var(--p-primary-contrast-color);
+    --menuitem-icon-color: var(--p-primary-contrast-color);
+    --menuitem-hover-bg-color: rgba(255, 255, 255, .1);
+    --popup-submenu-item-text-color: var(--p-text-color);
+    --popup-submenu-item-icon-color: var(--p-primary-color);
+    --popup-submenu-item-hover-bg-color: var(--p-surface-hover);
+
+    .layout-sidebar {
+        --scrollbar-track: var(--p-primary-color);
+    }
+}
+
+.layout-dark.layout-primarycolor-menu {
+    --root-menuitem-text-color: var(--p-text-color);
+    --menuitem-icon-color: var(--p-text-color);
+    --root-menuitem-text-color: var(--p-text-color);
+    --menuitem-text-color: var(--p-text-color);
+}

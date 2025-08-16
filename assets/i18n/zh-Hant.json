@@ -1,0 +1,34 @@
+{
+  "transport": "運輸",
+  "date": "日期",
+  "time": "時間",
+   "trackTime": "追蹤時間",
+  "coordinates": "座標",
+  "altitude": "海拔",
+  "speed": "速度",
+  "online": "在線",
+  "history": "歷史",
+  "settings": "設定",
+  "language": "語言",
+  "style": "地圖樣式",
+  "darkMode": "深色模式",
+  "maps": {
+   "trackAltitudeLegend": "高度" ,
+   "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "軌跡",
+    "waypoints": "途經點",
+    "autoPan": "自動漫遊"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "無可顯示的數據",
+          "detail": "請選擇其他時間段。"
+        }
+      }
+    }
+}

@@ -1,0 +1,35 @@
+
+{
+  "transport": "輸送",
+  "date": "日付",
+  "time": "時間",
+  "trackTime": "時間を追跡",
+  "coordinates": "座標",
+  "altitude": "高度",
+  "speed": "速度",
+  "online": "オンライン",
+  "history": "履歴",
+  "settings": "設定",
+  "language": "言語",
+  "style": "マップのスタイル",
+  "darkMode": "ダークモード",
+  "maps": {
+   "trackAltitudeLegend": "高度",
+   "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "トラック",
+    "waypoints": "ウェイポイント",
+    "autoPan": "自動パン"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "表示可能なデータがありません",
+          "detail": "別の期間を選択してください。"
+        }
+      }
+    }
+}

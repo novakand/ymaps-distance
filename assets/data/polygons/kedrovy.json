@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Кедровый, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 201569330,
+          "osm_type": "way",
+          "osm_id": 174728568,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Кедровый, городской округ Кедровый, Томская область, Сибирский федеральный округ, 636615, Россия",
+          "name": "Кедровый",
+          "postcode": "636615",
+          "county": "городской округ Кедровый",
+          "state": "Томская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "городской округ Кедровый",
+            "level4": "Томская область",
+            "level3": "Сибирский федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q145669",
+            "wikipedia": "ru:Кедровый (Томская область)",
+            "population": "2996",
+            "linked_place": "town",
+            "official_status": "ru:город",
+            "population:date": "2023-01-01",
+            "source:population": "https://tmsk.gks.ru/folder/32175"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.5456895,
+              57.5653802
+            ],
+            [
+              79.5566272,
+              57.5482328
+            ],
+            [
+              79.5925805,
+              57.5545177
+            ],
+            [
+              79.5981521,
+              57.555822
+            ],
+            [
+              79.5954966,
+              57.5589381
+            ],
+            [
+              79.5814761,
+              57.5721571
+            ],
+            [
+              79.5456895,
+              57.5653802
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

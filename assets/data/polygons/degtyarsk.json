@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Дегтярск, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 185154248,
+          "osm_type": "node",
+          "osm_id": 438264676,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Дегтярск, муниципальный округ Дегтярск, Свердловская область, Уральский федеральный округ, 623270, Россия",
+          "name": "Дегтярск",
+          "postcode": "623270",
+          "county": "муниципальный округ Дегтярск",
+          "state": "Свердловская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "муниципальный округ Дегтярск",
+            "level4": "Свердловская область",
+            "level3": "Уральский федеральный округ"
+          },
+          "extra": {
+            "website": "https://www.degtyarsk.ru/",
+            "wikidata": "Q105425",
+            "wikipedia": "ru:Дегтярск",
+            "population": "15974",
+            "official_status": "ru:город",
+            "population:date": "2014-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.086807,
+          56.698341
+        ]
+      }
+    }
+  ]
+}

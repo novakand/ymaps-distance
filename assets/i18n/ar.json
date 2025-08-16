@@ -1,0 +1,34 @@
+{
+  "transport": "النقل",
+  "date": "التاريخ",
+  "time": "الوقت",
+  "trackTime": "تتبع الوقت",
+  "coordinates": "الإحداثيات",
+  "altitude": "الارتفاع",
+  "speed": "السرعة",
+  "online": "متصل",
+  "history": "السجل",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "style": "نمط الخريطة",
+  "darkMode": "الوضع الداكن",
+  "maps": {
+    "trackAltitudeLegend": "الارتفاع",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "المسار",
+    "waypoints": "نقاط الطريق",
+    "autoPan": "التحريك التلقائي"
+  },
+  "toast": {
+    "notfound": {
+      "nodata": {
+        "summary": "لا توجد بيانات للعرض",
+        "detail": "يرجى اختيار فترة زمنية أخرى."
+      }
+    }
+  }
+}

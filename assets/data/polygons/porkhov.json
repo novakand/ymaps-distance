@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Порхов, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 157487473,
+          "osm_type": "node",
+          "osm_id": 76752092,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Порхов, Порховский муниципальный округ, Псковская область, Северо-Западный федеральный округ, 182620, Россия",
+          "name": "Порхов",
+          "postcode": "182620",
+          "county": "Порховский муниципальный округ",
+          "state": "Псковская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Порховский муниципальный округ",
+            "level4": "Псковская область",
+            "level3": "Северо-Западный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q183106",
+            "wikipedia": "ru:Порхов",
+            "population": "10572",
+            "official_status": "ru:город"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.5587337,
+          57.7594629
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Инта, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 251495314,
+          "osm_type": "node",
+          "osm_id": 335978609,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Инта, муниципальный округ Инта, Республика Коми, Северо-Западный федеральный округ, 169840, Россия",
+          "name": "Инта",
+          "postcode": "169840",
+          "county": "муниципальный округ Инта",
+          "state": "Республика Коми",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "муниципальный округ Инта",
+            "level4": "Республика Коми",
+            "level3": "Северо-Западный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q142996",
+            "wikipedia": "ru:Инта",
+            "population": "26983",
+            "official_status": "ru:город",
+            "population:date": "2016"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          60.1313631,
+          66.0401498
+        ]
+      }
+    }
+  ]
+}

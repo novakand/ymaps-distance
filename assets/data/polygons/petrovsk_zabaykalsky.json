@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Петровск-Забайкальский, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 202658007,
+          "osm_type": "node",
+          "osm_id": 243349531,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Петровск-Забайкальский, Петровск-Забайкальский муниципальный округ, Забайкальский край, Дальневосточный федеральный округ, 673009, Россия",
+          "name": "Петровск-Забайкальский",
+          "postcode": "673009",
+          "county": "Петровск-Забайкальский муниципальный округ",
+          "state": "Забайкальский край",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Петровск-Забайкальский муниципальный округ",
+            "level4": "Забайкальский край",
+            "level3": "Дальневосточный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q178870",
+            "wikipedia": "ru:Петровск-Забайкальский",
+            "population": "16524",
+            "official_status": "ru:город",
+            "population:date": "2017-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.854485,
+          51.275215
+        ]
+      }
+    }
+  ]
+}

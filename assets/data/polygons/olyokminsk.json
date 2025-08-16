@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Олёкминск, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 201611295,
+          "osm_type": "node",
+          "osm_id": 301959493,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "district",
+          "label": "Олёкминск, городское поселение Олекминск, Олёкминский улус, Республика Саха (Якутия), Дальневосточный федеральный округ, 678100, Россия",
+          "name": "Олёкминск",
+          "postcode": "678100",
+          "city": "Олёкминск",
+          "county": "Олёкминский улус",
+          "state": "Республика Саха (Якутия)",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level8": "городское поселение Олекминск",
+            "level6": "Олёкминский улус",
+            "level4": "Республика Саха (Якутия)",
+            "level3": "Дальневосточный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q176348",
+            "wikipedia": "ru:Олёкминск",
+            "population": "9213",
+            "official_status": "ru:город",
+            "population:date": "2018-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.403496,
+          60.3729364
+        ]
+      }
+    }
+  ]
+}

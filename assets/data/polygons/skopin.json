@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Скопин, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 182070562,
+          "osm_type": "node",
+          "osm_id": 334723403,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "district",
+          "label": "Скопин, городской округ Скопин, Рязанская область, Центральный федеральный округ, 391801, Россия",
+          "name": "Скопин",
+          "postcode": "391801",
+          "city": "Скопин",
+          "county": "городской округ Скопин",
+          "state": "Рязанская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "городской округ Скопин",
+            "level4": "Рязанская область",
+            "level3": "Центральный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q194670",
+            "wikipedia": "ru:Скопин",
+            "oktmo:user": "61715000001",
+            "population": "27444",
+            "contact:website": "http://skopin-gorod.ru",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.549274,
+          53.823524
+        ]
+      }
+    }
+  ]
+}
