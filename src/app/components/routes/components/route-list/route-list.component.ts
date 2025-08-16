@@ -57,7 +57,8 @@ export class RouteListComponent implements OnInit {
     public menuItems = [
         {
             label: 'Download Exel',
-            icon: 'pi pi-download'
+            icon: 'pi pi-download',
+             command: () => this._downloadExcel()
         }
     ];
     constructor(
@@ -99,6 +100,29 @@ export class RouteListComponent implements OnInit {
                 }
             });
     }
+
+    private _downloadExcel() {
+    const url = 'assets/data/routes-merged.xlsx'; 
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.blob();
+      })
+      .then(blob => {
+        const objectUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = objectUrl;
+        a.download = 'routes.xlsx';
+        a.rel = 'noopener';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(objectUrl);
+      })
+      .catch(err => {
+        console.error('Failed to download routes-merged.xlsx', err);
+      });
+  }
 
     public onChange({ value }: any): void {
         this.router.navigate(['/route', value.id]);
