@@ -1,0 +1,43 @@
+::ng-deep {
+
+    .p-drawer-bottom-append {
+        bottom: 0 !important;
+        position: absolute !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .p-listbox-list-container {
+        max-height: 44rem !important;
+    }
+
+    .p-listbox:not(.p-disabled) .p-listbox-option:not(.p-listbox-option-selected):not(.p-disabled):hover {
+        background: transparent;
+    }
+
+    .p-listbox-option {
+        border: none !important;
+        border: 1px solid var(--p-content-border-color) !important;
+        border-radius: .25rem;
+        padding: 1.125rem;
+    }
+
+    .p-listbox-list {
+        gap: 14px;
+    }
+
+    .p-listbox:not(.p-disabled) .p-listbox-option:not(.p-listbox-option-selected):not(.p-disabled).p-focus {
+        background: transparent;
+
+    }
+
+    .p-listbox:not(.p-disabled) .p-listbox-option.p-listbox-option-selected.p-focus {
+        background: transparent;
+        color: var(--p-primary-color);
+    }
+
+    .p-listbox .p-listbox-list .p-listbox-option.p-listbox-option-selected {
+        background: transparent;
+        color: var(--p-primary-color);
+    }
+}

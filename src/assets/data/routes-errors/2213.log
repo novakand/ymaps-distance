@@ -1,0 +1,10 @@
+[2025-08-15T16:18:47.768Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:32:19.900Z]
+lineSplit failed on boundary
+slug=uchaly
+splitterType=LineString
+coordinates must contain numbers
+

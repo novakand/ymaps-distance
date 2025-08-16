@@ -1,0 +1,6 @@
+[2025-08-15T17:36:10.017Z]
+lineSplit failed on boundary
+slug=sim
+splitterType=LineString
+coordinates must contain numbers
+

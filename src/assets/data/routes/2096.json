@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2096",
+        "order": 2096,
+        "uuid": "42936a68-70f1-4a99-95b6-4eb74843d5af",
+        "color": "#808080",
+        "provider": "ymaps.route",
+        "routeName": "",
+        "duration": 0,
+        "durationText": "0 с",
+        "durationInTraffic": 0,
+        "durationInTrafficText": "0 с",
+        "durationBy4060": 0,
+        "durationBy4060Text": "0 мин",
+        "distance": 0,
+        "distanceText": "0 м",
+        "distanceCity": 0,
+        "distanceOutside": 0,
+        "distanceTotal": 0,
+        "hasTolls": false,
+        "bbox": [
+          58.974075214986335,
+          53.42984473797765,
+          58.974075214986335,
+          53.42984473797765
+        ],
+        "cities": [
+          "magnitogorsk"
+        ],
+        "steps": [
+          {
+            "index": 0,
+            "type": "driving",
+            "actionValue": "straight",
+            "actionText": "прямо",
+            "name": "",
+            "distance": 0,
+            "distanceText": "0 м",
+            "duration": 0,
+            "durationText": "0 с",
+            "durationInTraffic": 0,
+            "durationInTrafficText": "0 с",
+            "coordinates": [
+              58.974075,
+              53.429845
+            ]
+          }
+        ],
+        "roadTypes": [
+          "driving"
+        ],
+        "start": {
+          "name": "Улица Герцена, 6А",
+          "request": [
+            53.429937,
+            58.974075
+          ],
+          "addressComponent": {
+            "region": "Челябинская область",
+            "city": "Магнитогорск",
+            "street": "улица Герцена",
+            "country": "Россия",
+            "house": "6А",
+            "countryCode": "RU",
+            "postalCode": "455001",
+            "address": "Россия, Челябинская область, Магнитогорск, улица Герцена, 6А"
+          },
+          "coordinates": [
+            58.974075,
+            53.429937
+          ]
+        },
+        "end": {
+          "name": "Улица Герцена, 6А",
+          "request": [
+            53.429937,
+            58.974075
+          ],
+          "addressComponent": {
+            "region": "Челябинская область",
+            "city": "Магнитогорск",
+            "street": "улица Герцена",
+            "country": "Россия",
+            "house": "6А",
+            "countryCode": "RU",
+            "postalCode": "455001",
+            "address": "Россия, Челябинская область, Магнитогорск, улица Герцена, 6А"
+          },
+          "coordinates": [
+            58.974075,
+            53.429937
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            58.974075,
+            53.429845
+          ],
+          [
+            58.974075,
+            53.429845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "start",
+        "name": "улица Герцена, 6А",
+        "addressComponent": {
+          "region": "Челябинская область",
+          "city": "Магнитогорск",
+          "street": "улица Герцена",
+          "country": "Россия",
+          "house": "6А",
+          "countryCode": "RU",
+          "postalCode": "455001",
+          "address": "Россия, Челябинская область, Магнитогорск, улица Герцена, 6А"
+        },
+        "request": [
+          53.429937,
+          58.974075
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.974075,
+          53.429937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "end",
+        "name": "улица Герцена, 6А",
+        "addressComponent": {
+          "region": "Челябинская область",
+          "city": "Магнитогорск",
+          "street": "улица Герцена",
+          "country": "Россия",
+          "house": "6А",
+          "countryCode": "RU",
+          "postalCode": "455001",
+          "address": "Россия, Челябинская область, Магнитогорск, улица Герцена, 6А"
+        },
+        "request": [
+          53.429937,
+          58.974075
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.974075,
+          53.429937
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+
+{
+  "transport": "Trasporto",
+  "date": "Data",
+  "time": "Ora",
+   "trackTime": "Traccia il tempo",
+  "coordinates": "Coordinate",
+  "altitude": "Altitudine",
+  "speed": "Velocità",
+  "online": "Online",
+  "history": "Cronologia",
+  "settings": "Impostazioni",
+  "language": "Lingua",
+   "style": "Stile mappa",
+  "darkMode": "Modalità scura",
+  "maps": {
+   "trackAltitudeLegend": "Altitudine",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "Traccia",
+    "waypoints": "Punti di percorso",
+    "autoPan": "Panoramica automatica"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "Nessun dato disponibile per la visualizzazione",
+          "detail": "Seleziona un periodo di tempo diverso."
+        }
+      }
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="140.083mm" height="140.083mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 13876 13876"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="722" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="700">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="722" d="M718.002 0l-156.166 0 -61.8369 163 -287.165 0 -59.5012 -163 -153.332 0 278 715.998 153.166 0 286.836 -715.998zm-265.002 284.002l-99.5 264.998 -96.6653 -264.998 196.165 0z"/>
+   <glyph unicode="O" horiz-adv-x="777" d="M42.9997 353.666c0,73.0017 10.9984,134.336 32.8328,183.999 16.1688,36.5027 38.5021,69.3355 66.6672,98.3359 28.1651,29.0004 58.9985,50.4983 92.5003,64.664 44.6665,18.8334 96.1664,28.3352 154.5,28.3352 105.668,0 190.001,-32.8328 253.501,-98.3321 63.3336,-65.6694 94.9985,-156.835 94.9985,-273.668 0,-115.831 -31.4986,-206.499 -94.3333,-271.832 -62.8309,-65.5031 -146.997,-98.1696 -252.167,-98.1696 -106.5,0 -191.331,32.5002 -254.166,97.6669 -62.8347,65.0004 -94.3333,154.67 -94.3333,269.001zm149.001 4.83402c0,-81.1655 18.8334,-142.666 56.3339,-184.668 37.5005,-41.8319 85.1642,-62.8309 142.832,-62.8309 57.8344,0 105.165,20.8328 142.333,62.332 37.0016,41.6656 55.4987,104.001 55.4987,187.166 0,82.167 -17.9981,143.501 -54.1645,183.833 -36,40.5015 -83.8338,60.6691 -143.668,60.6691 -59.6675,0 -107.834,-20.5002 -144.333,-61.3343 -36.4989,-41.0004 -54.8335,-102.667 -54.8335,-185.167z"/>
+   <glyph unicode="F" horiz-adv-x="610" d="M73.0017 0l0 715.998 491.997 0 0 -120.998 -346.999 0 0 -170 300 0 0 -121.002 -300 0 0 -303.999 -144.998 0z"/>
+   <glyph unicode="T" horiz-adv-x="610" d="M233.998 0l0 595 -211.998 0 0 120.998 567.999 0 0 -120.998 -211 0 0 -595 -145.002 0z"/>
+   <glyph unicode="K" horiz-adv-x="722" d="M75.001 0l0 715.998 144.998 0 0 -317.163 292.169 317.163 194.332 0 -270.169 -278.831 284.168 -437.167 -187 0 -197.001 336.167 -116.5 -119.668 0 -216.499 -144.998 0z"/>
+   <glyph unicode="E" horiz-adv-x="667" d="M73.0017 0l0 715.998 530 0 0 -120.998 -385.002 0 0 -159.001 358.001 0 0 -120.998 -358.001 0 0 -194 399.001 0 0 -121.002 -543.999 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str1 {stroke:#FEFEFE;stroke-width:198.104}
+    .str0 {stroke:#2B2A29;stroke-width:495.261}
+    .fil2 {fill:#2B2A29}
+    .fil0 {fill:#A8D4AF}
+    .fil1 {fill:#2B2A29;fill-rule:nonzero}
+    .fnt0 {font-weight:bold;font-size:2620.75px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="248" y="248" width="13380" height="13380" rx="2079" ry="2485"/>
+  <polygon class="fil1 str1" points="4736,8237 4736,2398 5919,2398 5919,4698 8218,4698 8218,2398 9401,2398 9401,8237 8218,8237 8218,5684 5919,5684 5919,8237 "/>
+  <text x="874" y="12162"  class="fil2 fnt0">TAKEOFF</text>
+ </g>
+</svg>

@@ -1,0 +1,67 @@
+::ng-deep {
+    .p-drawer-bottom-append {
+        bottom: 0 !important;
+        position: absolute !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .p-timeline-event-marker::before {
+        background: transparent;
+    }
+
+    .p-timeline-event-separator {
+        top: 16px;
+        position: relative;
+    }
+
+    .p-timeline-event-opposite {
+        padding: 0 0;
+        max-width: 0;
+    }
+
+
+    .full-screen-datepicker {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        z-index: 10000 !important; 
+    }
+
+    .full-screen-datepicker .p-datepicker {
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Сетка календаря и футер растянуть */
+    .full-screen-datepicker .p-datepicker-calendar {
+        flex: 1;
+        overflow: auto;
+    }
+
+    .full-screen-datepicker .p-datepicker-titlebar,
+    .full-screen-datepicker .p-datepicker-footer {
+        flex-shrink: 0;
+    }
+
+    
+}
+
+::ng-deep {
+  .p-timeline-routes .p-timeline-event-separator {
+    top: 18px;
+    position: relative;
+  }
+
+  .p-timeline-routes .p-timeline-event-opposite {
+    display: none;
+  }
+
+}

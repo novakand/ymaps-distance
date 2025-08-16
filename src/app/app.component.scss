@@ -1,0 +1,8 @@
+::ng-deep {
+    .p-toast-message-info {
+        background: var(--ground-background);
+        border-color: transparent;
+        color: var(--primary);
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,14 @@
+[2025-08-15T16:17:58.766Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:59:15.220Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:31:25.033Z]
+lineSplit failed on boundary
+slug=chelyabinsk
+splitterType=MultiLineString
+coordinates must contain numbers
+

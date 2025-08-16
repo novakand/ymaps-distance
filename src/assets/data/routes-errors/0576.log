@@ -1,0 +1,14 @@
+[2025-08-15T16:15:57.724Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:56:57.504Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:29:02.087Z]
+lineSplit failed on boundary
+slug=ust_katav
+splitterType=LineString
+coordinates must contain numbers
+

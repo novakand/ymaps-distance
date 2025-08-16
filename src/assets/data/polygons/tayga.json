@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Тайга, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 199986137,
+          "osm_type": "way",
+          "osm_id": 324713452,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Тайга, Тайгинский городской округ, Кемеровская область, Сибирский федеральный округ, Россия",
+          "name": "Тайга",
+          "county": "Тайгинский городской округ",
+          "state": "Кемеровская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Тайгинский городской округ",
+            "level4": "Кемеровская область",
+            "level3": "Сибирский федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q196592",
+            "wikipedia": "ru:Тайга (город)",
+            "population": "22092",
+            "linked_place": "town",
+            "official_status": "ru:город",
+            "population:date": "2023-01-01",
+            "source:population": "http://www.gks.ru/free_doc/doc_2019/bul_dr/mun_obr2019.rar"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.5707685,
+              56.0507596
+            ],
+            [
+              85.5860229,
+              56.0425789
+            ],
+            [
+              85.5880923,
+              56.041469
+            ],
+            [
+              85.6186028,
+              56.0387247
+            ],
+            [
+              85.6466138,
+              56.0427689
+            ],
+            [
+              85.673332,
+              56.058845
+            ],
+            [
+              85.6720392,
+              56.0733752
+            ],
+            [
+              85.6407996,
+              56.0835109
+            ],
+            [
+              85.6420871,
+              56.0856061
+            ],
+            [
+              85.6390616,
+              56.0859653
+            ],
+            [
+              85.6376024,
+              56.0836306
+            ],
+            [
+              85.5987796,
+              56.0892463
+            ],
+            [
+              85.5840415,
+              56.0849665
+            ],
+            [
+              85.5707685,
+              56.0507596
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

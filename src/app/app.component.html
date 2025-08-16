@@ -1,0 +1,219 @@
+<p-confirmdialog
+  #error
+  key="error"
+  [appendTo]="'body'"
+  maskStyleClass=""
+  [baseZIndex]="40000"
+  [autoZIndex]="true"
+>
+  <ng-template
+    #headless
+    let-message
+  >
+    <div class="flex flex-col items-center p-4 border-round">
+      <div
+        class="rounded-full inline-flex justify-center items-center h-[6rem] w-[6rem]"
+        style="background: #f87171;"
+      >
+        <i
+          class="pi pi-times text-5xl"
+          style="color: #fff;"
+        ></i>
+      </div>
+      <span class="font-bold text-2xl block mb-2 mt-4">
+        {{ message.header || 'An error has occurred' }}
+      </span>
+      <p class="mb-0">{{ message.message || 'Please try again later' }}</p>
+      <div class="flex items-center gap-2 mt-4">
+        <button
+          pButton
+          label="Close"
+          (click)="error.onAccept()"
+          class="w-[26rem] "
+        >
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</p-confirmdialog>
+
+
+<p-confirmdialog
+  #success
+  key="success"
+  [appendTo]="'body'"
+  maskStyleClass=""
+  [baseZIndex]="40000"
+  [autoZIndex]="true"
+>
+  <ng-template
+    #headless
+    let-message
+  >
+    <div class="flex flex-col items-center p-4 border-round">
+      <div
+        class="rounded-full inline-flex justify-center items-center h-[6rem] w-[6rem]"
+        style="background: #1ea97c;"
+      >
+        <i
+          class="pi pi-check text-5xl"
+          style="color: #fff;"
+        ></i>
+      </div>
+      <span class="font-bold text-2xl block mb-2 mt-4">
+        {{ message.header || 'Successfully' }}
+      </span>
+      <p class="mb-0">{{ message.message || 'Data saved' }}</p>
+      <div class="flex items-center gap-2 mt-4">
+        <button
+          pButton
+          label="Закрыть"
+          (click)="success.onAccept()"
+          class="w-[26rem] "
+        >
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</p-confirmdialog>
+
+<p-confirmdialog
+  #confirm
+  key="confirm"
+  [appendTo]="'body'"
+  maskStyleClass=""
+  [baseZIndex]="40000"
+  [autoZIndex]="true"
+>
+  <ng-template
+    #headless
+    let-message
+  >
+    <div class="flex flex-col items-center p-4 border-round">
+      <div class="rounded-full  bg-primary inline-flex justify-center items-center h-[6rem] w-[6rem]">
+        <i
+          class="pi pi-info text-5xl"
+          style="color: #fff;"
+        ></i>
+      </div>
+      <span class="font-bold text-2xl block mb-2 mt-4">
+        {{ message.header || 'Confirmation' }}
+      </span>
+      <p class="mb-0">{{ message.message || 'Are you sure you want to continue?' }}</p>
+      <div class="flex items-center gap-2 mt-4">
+        <button
+          pButton
+          label="Отменить"
+          (click)="confirm.onReject()"
+          class="p-button-outlined w-[13rem] "
+        >
+        </button>
+
+        <button
+          pButton
+          label="Продолжить"
+          (click)="confirm.onAccept()"
+          class="w-[13rem]"
+        >
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</p-confirmdialog>
+
+<p-toast
+  key="notfound"
+  life="2000"
+  messageStyleClass="notfound-toast"
+  [showTransformOptions]="'translateY(100%)'"
+  [showTransitionOptions]="'500ms'"
+  [hideTransitionOptions]="'300ms'"
+  [showTransformOptions]="'translateX(100%)'"
+  position="top-right"
+  [baseZIndex]="5000"
+  styleClass="custom-toast p-4"
+  severity="custom"
+  contentStyleClass="
+    bg-white!            
+    border-l-4!         
+    border-primary-500! 
+    text-primary-500   
+    shadow-lg         
+    py-3 px-5         
+  "
+>
+  <ng-template
+    let-message
+    #headless
+    let-closeFn="closeFn"
+  >
+    <div class="flex flex-col items-start flex-auto p-4">
+      <div class="flex items-center gap-2">
+
+        <span class="font-bold text-lg">{{ message.summary }}</span>
+      </div>
+      <div class="font-medium text-lg my-4">{{ message.detail }}</div>
+    </div>
+  </ng-template>
+  <ng-template
+    pTemplate="message"
+    let-message
+    let-closeFn="close"
+  >
+  </ng-template>
+</p-toast>
+
+
+
+@if(!(pageLayoutService.isLoading$ | async)) {
+@switch(pageLayoutService.layout$ | async) {
+
+@case(PageLayout.authorized) {
+<div
+  class="layout-container"
+  [ngClass]="containerClass"
+>
+  <app-authorized-layout>
+    <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+  </app-authorized-layout>
+</div>
+}
+
+@case(PageLayout.unAuthorized) {
+
+<div
+  class="layout-container"
+  [ngClass]="containerClass"
+>
+  <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+
+
+</div>
+}
+
+@case(PageLayout.error) {
+<router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+}
+
+@case(PageLayout.login) {
+<app-unauthorized-layout>
+  <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+</app-unauthorized-layout>
+}
+
+@default {
+<app-unauthorized-layout>
+  <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+</app-unauthorized-layout>
+}
+}
+} @else {
+<div class="preloader">
+  <ul class="preloader__dots">
+    <li class="dots-item"></li>
+    <li class="dots-item"></li>
+    <li class="dots-item"></li>
+    <li class="dots-item"></li>
+  </ul>
+</div>
+}

@@ -1,0 +1,8 @@
+ <div class="layout-content">
+      <div class="layout-content-inner">
+      <p-progressBar *ngIf="showProgress" styleClass="map-dialog_progress"
+        [style]="{'height': '4px'}" mode="indeterminate" />
+      <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+    </div>
+    </div>
+  

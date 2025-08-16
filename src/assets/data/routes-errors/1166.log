@@ -1,0 +1,14 @@
+[2025-08-15T16:16:44.939Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:57:48.497Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:29:59.204Z]
+lineSplit failed on boundary
+slug=sim
+splitterType=LineString
+coordinates must contain numbers
+

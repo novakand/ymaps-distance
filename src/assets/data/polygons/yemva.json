@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Емва, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 185681639,
+          "osm_type": "node",
+          "osm_id": 335978390,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Емва, Княжпогостский муниципальный округ, Республика Коми, Северо-Западный федеральный округ, 169200, Россия",
+          "name": "Емва",
+          "postcode": "169200",
+          "county": "Княжпогостский муниципальный округ",
+          "state": "Республика Коми",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Княжпогостский муниципальный округ",
+            "level4": "Республика Коми",
+            "level3": "Северо-Западный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q135675",
+            "wikipedia": "ru:Емва",
+            "population": "13180",
+            "official_status": "ru:город",
+            "population:date": "2016"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.8880873,
+          62.5983295
+        ]
+      }
+    }
+  ]
+}

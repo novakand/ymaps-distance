@@ -1,0 +1,52 @@
+<div
+    class="layout-content"
+    
+>
+    <div class="layout-content-inner">
+        <p-progressBar
+            *ngIf="showProgress"
+            styleClass="map-dialog_progress"
+            [style]="{'height': '4px'}"
+            mode="indeterminate"
+        />
+        <div
+            class="layout-map-container"
+            style="width: 100%; height: 100%;"
+        >
+            <button 
+                class="map-config-button p-link"
+                [ngClass]="{
+            'ml-0!': !isMapSidebar(),
+            'ml-[40rem]! max-[991px]:hidden': isMapSidebar()
+          }"
+                (click)="toggleSideBar()"
+                type="button"
+            >
+                <i
+                    class="pi"
+                    [ngClass]="{
+              'pi-angle-right': !isMapSidebar(),
+              'pi-angle-left': isMapSidebar()
+            }"
+                >
+                </i>
+            </button>
+            <div
+                class="layout-map-sidebar transition-all duration-100 ease-[cubic-bezier(0,0,0.2,1)]"
+                style="position: absolute;"
+            >
+
+                <router-outlet (activate)="onActivateRouterOutlet()"></router-outlet>
+
+            </div>
+            <div
+                class="layout-map-content-wrapper"
+                style="position: relative;"
+            >
+                <div class="layout-map-content">
+                    <app-map></app-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

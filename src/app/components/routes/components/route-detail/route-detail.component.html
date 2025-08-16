@@ -1,0 +1,168 @@
+<p-drawer
+    [(visible)]="isVisible"
+    (onHide)="onHide()"
+    modal="false"
+    appendTo=""
+    styleClass="border-none p-drawer-bottom-append"
+    position="bottom"
+    showCloseIcon="false"
+>
+    <ng-template #header>
+        <ng-container>
+            <div class="flex items-center justify-between w-full mb-0 gap-2">
+                <div class="text-900 text-xl font-semibold whitespace-nowrap">Route</div>
+                <div class="flex items-center ml-auto">
+                    <p-button
+                        *ngIf="isSmallScreen"
+                        class="text-xl"
+                        [rounded]="true"
+                        badgeSeverity="contrast"
+                        (click)="toggleSideBar()"
+                        size="large"
+                        icon="pi pi-map"
+                        [text]="true"
+                    />
+
+                    <p-button
+                        class="text-xl ml-4"
+                        [rounded]="true"
+                        badgeSeverity="contrast"
+                        size="large"
+                        (click)="onClose()"
+                        icon="pi pi-times"
+                        [text]="true"
+                    />
+                </div>
+            </div>
+        </ng-container>
+    </ng-template>
+    <div class="grid">
+        <div class="col-span-12 lg:col-span-12 h-full">
+            <div class="grid grid-cols-12 gap-4">
+                <ng-container *ngIf="data">
+                    <div class="col-span-12">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">id</span>
+                            <span class="font-semibold">
+                                {{item?.id ||'-'}}
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">Duration </span>
+                            <span class="font-semibold">
+                                {{item?.durationText ||'-'}}
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">Duration Traffic </span>
+                            <span class="font-semibold">
+                                {{item?.durationInTrafficText ||'-'}}
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">Duration (40 urban / 60 rural km/h)</span>
+                            <span class="font-semibold">
+                                {{item?.durationBy4060Text ||'-'}}
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">Distance</span>
+                            <span class="font-semibold">
+                                {{item?.distanceText ||'-'}}
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold">HasTolls</span>
+                            <span class="font-semibold">
+                                {{ item?.hasTolls == null ? '-' : item?.hasTolls }}
+                            </span>
+                        </div>
+
+
+                    </div>
+                </ng-container>
+
+
+                <div
+                    [formGroup]="form"
+                    class="col-span-12  border-t border-surface"
+                >
+                    <div class="flex flex-col lg:flex-row flex-wrap items-center py-2">
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between mb-0">
+                                <p-button
+                                    label="More"
+                                    [disabled]="'true'"
+                                    styleClass="px-0 py-0"
+                                    (click)="onRoutes()"
+                                    styleClass="text-color"
+                                    size="large"
+                                    [link]="true"
+                                />
+
+                            </div>
+                            <div class="flex flex-grow justify-between items-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+
+                        <p-timeline
+                            [value]="points"
+                            class="w-full p-timeline-routes"
+                        >
+
+                            <ng-template
+                                pTemplate="marker"
+                                let-event
+                            >
+                                <span
+                                    class="p-timeline-event-marker"
+                                    [ngStyle]="{'border-color': event.type === 'loading' ? '#8BDE8C' : (event.type === 'unloading' ? '#FF5757' : '')}"
+                                >
+                                </span>
+                            </ng-template>
+
+                            <ng-template
+                                #content
+                                let-event
+                            >
+                                <div>
+                                    <span class="block mb-1 font-bold pt-[15px]">{{ event.name || '-' }}</span>
+                                    <span>{{event.coordinates}}</span>
+                                </div>
+                            </ng-template>
+                        </p-timeline>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</p-drawer>
+
+<p-drawer
+    [(visible)]="isVisibleRoute"
+    modal="false"
+    appendTo=""
+    styleClass="border-none p-drawer-bottom-append"
+    position="bottom"
+    showCloseIcon="true"
+>
+    <ng-template #header>
+        <div class="flex align-center justify-between mb-0">
+            <span class="text-900 text-xl font-semibold">Route</span>
+        </div>
+    </ng-template>
+
+    <div>
+
+    </div>
+
+</p-drawer>

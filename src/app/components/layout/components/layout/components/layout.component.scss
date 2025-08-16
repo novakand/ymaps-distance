@@ -1,0 +1,18 @@
+.layout-content-wrapper .layout-content {
+    padding: 2rem;
+}
+
+.layout-content-wrapper .layout-content .layout-content-inner .layout-map-container {
+    padding: 0 !important;
+}
+
+::ng-deep {
+     body{
+      overflow: hidden !important;
+     }
+     .layout-content-wrapper .layout-content {
+        overflow: auto;
+        height: calc(100vh - 10rem);
+      }
+      
+  }

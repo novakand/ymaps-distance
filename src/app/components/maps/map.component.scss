@@ -1,0 +1,343 @@
+::ng-deep {
+
+  .circle {
+   position: absolute;
+    width: 50px;
+    height: 50px;
+    color: #eb5547;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+  }
+
+  .circle-content {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #eb5547;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .circle-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+}
+
+  .pin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 6px;
+    border-radius: 9999px;
+    background: #e53935;
+    color: #fff;
+    font: 12px/1 system-ui;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .25);
+  }
+
+  .mapboxgl-popup-content {
+    padding: 0;
+    background: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup {
+    z-index: 2;
+  }
+
+  .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+    border-left-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+    border-bottom-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+    border-bottom-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
+    border-bottom-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+    border-right-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
+    border-top-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: var(--p-overlay-modal-background);
+  }
+
+  .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: var(--p-overlay-modal-background);
+  }
+
+  .infobox-wrapper-icon-close {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .infobox-wrapper {
+    display: flex;
+    width: 381px;
+  }
+
+  .infobox-wrapper-description {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: normal;
+    gap: 5px;
+  }
+
+  .infobox-wrapper-img {
+    object-fit: cover;
+    width: 130px;
+    max-width: 130px;
+    height: 107px;
+    cursor: pointer;
+    object-position: center;
+    border-radius: 8px 0px 0px 0px;
+  }
+
+  .infobox-wrapper .infobox-wrapper-title,
+  .infobox-wrapper-cluster .infobox-wrapper-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+  .p-slider .p-slider-handle:focus-visible {
+    outline: 0 none;
+    box-shadow: none;
+  }
+
+  .p-slider .p-slider-handle:focus {
+    outline: none;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  .map-dialog_progress.p-progressbar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: transparent;
+  }
+
+  .p-timeline-event-opposite {
+    display: none;
+  }
+
+  .p-dialog {
+    max-height: calc(100% - 48px);
+    margin: 24px;
+    padding: 0;
+    box-shadow: var(--mat-dialog-container-elevation-shadow, 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12));
+    border: none;
+  }
+
+  .map-dialog-close-button {
+    position: fixed;
+    top: -20px;
+    right: -20px;
+    z-index: 3;
+  }
+
+  .p-button-custom {
+    color: inherit;
+    background-color: #fff;
+    border-color: transparent;
+  }
+
+
+  .p-dialog .p-dialog-content {
+    padding: 0;
+    border-radius: 20px;
+  }
+
+
+  .needed-element .mat-pseudo-checkbox {
+    display: none !important;
+  }
+
+}
+
+.c-map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: var(--p-overlay-modal-background);
+
+  .c-map-toolbar-horizontal {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 72px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+
+    &.c-map-toolbar-horizontal__bottom {
+      top: auto;
+      bottom: 0;
+      padding: 16px 72px 16px 16px;
+    }
+
+    >*:not(.flex-fill) {
+      pointer-events: auto;
+    }
+  }
+
+  .c-map-toolbar-vertical {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 100%;
+    padding: 16px 16px 16px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+
+    >*:not(.flex-fill) {
+      pointer-events: auto;
+    }
+  }
+
+  .c-map__x-offset {
+    margin: 0 16px;
+  }
+
+  .c-map__right-offset {
+    margin-right: 16px;
+  }
+
+  .c-map__left-offset {
+    margin-left: 16px;
+  }
+
+  .c-map__y-offset {
+    margin: 16px 0;
+  }
+
+  .c-map__top-offset {
+    margin-top: 16px;
+  }
+
+  .c-map__bottom-offset {
+    margin-bottom: 16px;
+  }
+
+  .flex-fill {
+    flex: 1 1 auto !important;
+    pointer-events: none;
+  }
+
+}
+
+.c-map-dialog {
+  position: relative;
+  height: 100%;
+  background: var(--p-overlay-modal-background);
+  overflow: hidden;
+}
+
+.c-map-dialog_wrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background: var(--p-overlay-modal-background);
+
+}
+
+.c-map-dialog_sidebar {
+  float: none;
+  width: 520px;
+  background: var(--p-overlay-modal-background);
+  position: relative;
+}
+
+.map-dialog_sidebar-toolbar {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--surface-card);
+  height: 56px;
+
+  .mat-button {
+    .mat-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+.map-dialog_map-container {
+  flex-grow: 1;
+}
+
+
+::ng-deep .c-map-dialog_close-button {
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  z-index: 3;
+  background-color: #fff;
+  border-radius: 50px !important;
+  color: #535353;
+}
+
+::ng-deep {
+  .p-sidebar-bottom {
+    bottom: 0;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+mgl-map {
+  height: 100%;
+  width: 100%;
+}

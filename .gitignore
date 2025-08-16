@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+.out/
+.next/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# VSCode
+.vscode/
+
+# Scripts (если они только для локальной генерации и не нужны в репозитории)
+scripts/
+
+# Excel/JSON временные файлы
+src/assets/data/routes-input.json
+src/assets/data/routes-retry*.json
+src/assets/data/routes-retry*.json
+src/assets/data/routes-input.merged*.json
+

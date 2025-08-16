@@ -1,0 +1,17 @@
+<p-button
+  pRipple
+  [pTooltip]="(isFullscreen$ | async) ? 'Exit fullscreen' : 'Enter fullscreen'"
+  tooltipPosition="left"
+  [tooltipDisabled]="true"
+  positionLeft="-5"
+  positionTop="-5"
+  (onClick)="onFullscreenToggle()"
+  styleClass="p-button-map icon-only-toggle p-button-icon-only"
+  [style]="{ width: '38px', height: '38px' }"
+>
+  <ng-template #icon>
+    <span class="material-icons-outlined">
+      {{ (isFullscreen$ | async) ? 'fullscreen_exit' : 'fullscreen' }}
+    </span>
+  </ng-template>
+</p-button>

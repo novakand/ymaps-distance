@@ -1,0 +1,10 @@
+[2025-08-15T16:19:42.197Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:33:27.160Z]
+lineSplit failed on boundary
+slug=karabash
+splitterType=LineString
+coordinates must contain numbers
+

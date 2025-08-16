@@ -1,0 +1,129 @@
+<div>
+  <ng-container *ngIf="!noProgress">
+    <div
+      *ngIf="isSettings"
+      class="flex h-[56px] flex-row items-center px-4 py-0 border-b border-surface flex items-center justify-between"
+    >
+      <p-button
+        *ngIf="!visible"
+        [text]="true"
+        label=" Settings"
+        icon="pi pi-sliders-h"
+        (click)="onOpen()"
+      />
+
+      <div class="w-spacer">&nbsp;</div>
+    </div>
+  </ng-container>
+  <p-drawer
+    [(visible)]="visible"
+    modal="false"
+    appendTo=""
+    styleClass="border-none p-drawer-bottom-append"
+    position="bottom"
+  >
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center justify-content-between mb-0">
+        <span class="text-900 text-2xl block font-medium">Settings</span>
+      </div>
+    </ng-template>
+
+    <div
+      [formGroup]="form"
+      class="gap-6 pt-1 pb-6 flex-wrap flex-1 flex flex-col"
+    >
+      <div class="flex flex-wrap justify-between gap-6">
+        <label class="block font-semibold">Cities</label>
+        <p-toggleswitch
+          formControlName="isCities"
+          inputId="route"
+        />
+      </div>
+
+    </div>
+
+  </p-drawer>
+
+  <div class="flex items-center justify-between w-full mb-0 gap-2 p-6">
+                <div class="text-900 text-xl font-semibold whitespace-nowrap">Route({{countRoutes}})</div>
+                <div class="flex items-center ml-auto">
+                   <p-menu
+      #menu
+      [model]="menuItems"
+      [popup]="true"
+    />
+    <p-button
+      (click)="menu.toggle($event)"
+      icon="pi pi-download"
+      class="text-xl"
+      [rounded]="true"
+      badgeSeverity="contrast"
+      size="large"
+      [text]="true"
+    />
+                </div>
+            </div>
+
+
+  
+  <div class="p-4">
+
+    <p-listbox
+      [options]="data"
+      [(ngModel)]="active"
+      [checkmark]="true"
+      metaKeySelection="true"
+      [virtualScroll]="true"
+      scrollHeight="80vh"
+      [virtualScrollItemSize]="61"
+      (onChange)="onChange($event)"
+      [highlightOnSelect]="true"
+      styleClass="border-none shadow-none"
+      listStyleClass="max-h-60"
+      class="w-full md:w-56"
+    >
+      <ng-template
+        let-item
+        #item
+      >
+        <div class="flex items-center justify-between w-full px-2 py-1">
+          <div
+            class="flex items-center space-x-2"
+            pTooltip="{{ item.startAddress }} - {{item.endAddress}} {{item.durationText}} - {{item.distanceText}}"
+          >
+            <span
+              class="w-3 h-3 rounded-full"
+              [style.backgroundColor]="item.color"
+            ></span>
+            <span
+              class="font-bold"
+              style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 285px;"
+            >{{ item.startAddress }} - {{item.endAddress}}</span>
+            <span
+              class="font-bold"
+              style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 285px;"
+            > {{item.durationText}} - {{item.distanceText}} </span>
+          </div>
+          <i
+            class="pi pi-angle-right text-base"
+            style="font-size: 1.3rem"
+          ></i>
+        </div>
+      </ng-template>
+
+      <ng-template
+        let-item
+        #empty
+      >
+        <ng-container *ngFor="let _ of skeletons">
+          <div class="w-full  pb-3.5">
+            <p-skeleton
+              styleClass="block w-full"
+              [style]="{ height: '3.80rem' }"
+            ></p-skeleton>
+          </div>
+        </ng-container>
+      </ng-template>
+    </p-listbox>
+  </div>
+</div>

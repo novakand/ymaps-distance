@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Пионерский, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 161675982,
+          "osm_type": "node",
+          "osm_id": 261008814,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "district",
+          "label": "Пионерский, Пионерский городской округ, Калининградская область, Северо-Западный федеральный округ, 238590, Россия",
+          "name": "Пионерский",
+          "postcode": "238590",
+          "city": "Пионерский",
+          "county": "Пионерский городской округ",
+          "state": "Калининградская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Пионерский городской округ",
+            "level4": "Калининградская область",
+            "level3": "Северо-Западный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q179439",
+            "wikipedia": "ru:Пионерский (город)",
+            "population": "11475",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.22591,
+          54.948227
+        ]
+      }
+    }
+  ]
+}

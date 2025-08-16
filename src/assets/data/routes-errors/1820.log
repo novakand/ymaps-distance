@@ -1,0 +1,14 @@
+[2025-08-15T16:17:57.732Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:59:14.160Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:31:23.906Z]
+lineSplit failed on boundary
+slug=zlatoust
+splitterType=MultiLineString
+coordinates must contain numbers
+

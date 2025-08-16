@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Вязьма, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 182270748,
+          "osm_type": "node",
+          "osm_id": 262522404,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "district",
+          "label": "Вязьма, Вяземский муниципальный округ, Смоленская область, Центральный федеральный округ, 215110, Россия",
+          "name": "Вязьма",
+          "postcode": "215110",
+          "city": "Вязьма",
+          "county": "Вяземский муниципальный округ",
+          "state": "Смоленская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Вяземский муниципальный округ",
+            "level4": "Смоленская область",
+            "level3": "Центральный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q102307",
+            "wikipedia": "ru:Вязьма",
+            "population": "54269",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.2995187,
+          55.2103563
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "transport": "Transport",
+  "date": "Date",
+  "time": "Time",
+  "trackTime": "Track time",
+  "coordinates": "Coordinates",
+  "altitude": "Altitude",
+  "speed": "Speed",
+  "online": "Online",
+  "history": "History",
+  "settings": "Settings",
+  "language": "Language",
+  "style": "Style map",
+  "darkMode": "Dark mode",
+  "maps": {
+    "trackAltitudeLegend": "Altitude",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "Track",
+    "waypoints": "Waypoints",
+    "autoPan": "Auto Pan"
+  },
+  "toast": {
+    "notfound": {
+      "nodata": {
+        "summary": "No data available for display",
+        "detail": "Please select a different time period."
+      }
+    }
+  }
+}

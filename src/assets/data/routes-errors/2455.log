@@ -1,0 +1,10 @@
+[2025-08-15T16:19:15.610Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:32:55.141Z]
+lineSplit failed on boundary
+slug=ufa
+splitterType=MultiLineString
+coordinates must contain numbers
+

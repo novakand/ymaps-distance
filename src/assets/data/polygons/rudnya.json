@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Рудня, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 158553642,
+          "osm_type": "node",
+          "osm_id": 393764498,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "district",
+          "label": "Рудня, Руднянский муниципальный округ, Смоленская область, Центральный федеральный округ, 216790, Россия",
+          "name": "Рудня",
+          "postcode": "216790",
+          "city": "Рудня",
+          "county": "Руднянский муниципальный округ",
+          "state": "Смоленская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Руднянский муниципальный округ",
+            "level4": "Смоленская область",
+            "level3": "Центральный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q193388",
+            "wikipedia": "ru:Рудня (город)",
+            "population": "9652",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0906286,
+          54.9471458
+        ]
+      }
+    }
+  ]
+}

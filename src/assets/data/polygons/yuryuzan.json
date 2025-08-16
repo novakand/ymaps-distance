@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Юрюзань, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 187413347,
+          "osm_type": "node",
+          "osm_id": 251532339,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Юрюзань, Юрюзанское городское поселение, Катав-Ивановский район, Челябинская область, Уральский федеральный округ, 456120, Россия",
+          "name": "Юрюзань",
+          "postcode": "456120",
+          "city": "Юрюзанское городское поселение",
+          "county": "Катав-Ивановский район",
+          "state": "Челябинская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level8": "Юрюзанское городское поселение",
+            "level6": "Катав-Ивановский район",
+            "level4": "Челябинская область",
+            "level3": "Уральский федеральный округ"
+          },
+          "extra": {
+            "ele": "378",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Yuryuzan_(Chelyabinsk_oblast).png",
+            "sqkm": "20",
+            "wikidata": "Q198842",
+            "wikipedia": "ru:Юрюзань (город)",
+            "okato:user": "75229516",
+            "population": "10130",
+            "start_date": "1758",
+            "contact:website": "http://www.yuryuzan.ru",
+            "official_status": "ru:город",
+            "population:date": "2023"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.427807,
+          54.870075
+        ]
+      }
+    }
+  ]
+}

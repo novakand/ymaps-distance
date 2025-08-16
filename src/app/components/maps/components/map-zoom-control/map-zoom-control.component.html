@@ -1,0 +1,24 @@
+<div>
+        <p-button
+                pTooltip="zoom In"
+                positionLeft="-5"
+                tooltipPosition="left"
+                [tooltipDisabled]="true"
+                [disabled]="isDisabledZoomIn"
+                (click)="onZoomInChange()"
+                [style]="{'width': '38px', 'height': '38px', 'border-bottom-left-radius': 0,'border-bottom-right-radius': 0}"
+                styleClass=" p-button-map"
+                icon="pi pi-plus"
+        />
+        <p-button
+                pTooltip="Zoom Out"
+                positionLeft="-5"
+                tooltipPosition="left"
+                [tooltipDisabled]="true"
+                [disabled]="isDisabledZoomOut"
+                (click)="onZoomOutChange()"
+                [style]="{'width': '38px', 'height': '38px','border-top-left-radius': 0,'border-top-right-radius': 0,}"
+                styleClass=" border-top-none p-button-map"
+                icon="pi pi-minus"
+        />
+</div>

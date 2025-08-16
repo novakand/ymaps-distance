@@ -1,0 +1,14 @@
+[2025-08-15T16:16:03.420Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:57:04.939Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:29:08.930Z]
+lineSplit failed on boundary
+slug=nyazepetrovsk
+splitterType=LineString
+coordinates must contain numbers
+

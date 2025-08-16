@@ -1,0 +1,126 @@
+<div class="c-map">
+  <map-sidebar
+    [isVisible]="isVisible"
+    (visibleChange)="onVisibleChangeSidebar($event)"
+  ></map-sidebar>
+
+
+  <div class="c-map-toolbar-horizontal">
+    <map-legend-control></map-legend-control>
+  </div>
+
+  <div class="c-map-toolbar-vertical">
+    <map-settings-control
+      (onChange)="onChangeSettings($event)"
+      [isShowSettingsControl]="true"
+    >
+    </map-settings-control>
+    <div class="flex-fill"></div>
+
+    <map-zoom-control></map-zoom-control>
+
+    <div class="flex-fill"></div>
+
+  </div>
+  <div class="c-map-toolbar-horizontal c-map-toolbar-horizontal__bottom">
+    <div class="flex-fill"></div>
+
+  </div>
+  <ng-container *ngIf="!isMapLoad">
+    <p-skeleton
+      width="100%"
+      height="100%"
+    />
+  </ng-container>
+  <y-map
+    [props]="{
+          location: {
+            center: center(),
+            zoom: zoom(),
+            
+          },
+          theme: theme(),
+          zoomRange:zoomRange(),
+          restrictMapArea: bounds(),
+          margin: [50, 50, 50, 50]
+        }"
+    (ready)="onMapReady($event)"
+  >
+  <y-map-mouse></y-map-mouse>
+    <y-map-default-scheme-layer />
+    <y-map-default-features-layer />
+
+    <y-map-feature-data-source [props]="{ id: 'cities' }" />
+    <y-map-layer [props]="{ source: 'cities', type: 'features', zIndex: 1700 }" />
+
+
+    <y-map-feature-data-source [props]="{ id: 'markers' }" />
+    <y-map-layer [props]="{ source: 'markers', type: 'features', zIndex: 1900 }" />
+
+    <y-map-feature-data-source [props]="{ id: 'route' }" />
+    <y-map-layer [props]="{ source: 'route', type: 'features', zIndex: 1900 }" />
+
+    <y-map-feature
+      *ngIf="routeFeature"
+      [props]="{
+    source: 'route',
+    id: routeFeature.id,
+    geometry: routeFeature.geometry,
+    style: {
+      stroke: [{ color: '#006efc', width: 4 }]
+    }
+  }"
+    />
+
+    <ng-container *ngIf="markerFeatures">
+  <ng-container *ngFor="let f of markerFeatures; trackBy: trackByMarkerId">
+    <y-map-feature [props]="f"></y-map-feature>
+  </ng-container>
+</ng-container>
+
+    
+
+    <!-- Рендерим фичи, привязанные к источнику 'cities' -->
+    <ng-container *ngFor="let f of citiesFeatures; trackBy: trackById">
+      <y-map-feature [props]="{
+      source: 'cities',
+      id: f.id,  
+      geometry: f.geometry,
+      properties: f.properties,
+      style: f.style
+    }" />
+
+    </ng-container>
+
+    <ng-container>
+      <y-map-clusterer [props]="{
+         features: features, 
+      }">
+        <!-- КАСТОМНЫЙ МАРКЕР (аналог YMapDefaultMarker) -->
+        <ng-template
+          #marker
+          let-feature
+        >
+          <div class="pin">
+
+          </div>
+        </ng-template>
+
+        <!-- КАСТОМНЫЙ КЛАСТЕР (аналог YMapMarker с div) -->
+        <ng-template
+          #cluster
+          let-c
+        >
+
+          <div class="circle">
+            <div class="circle-content">
+              <span class="circle-text">{{ c.features.length }}</span>
+            </div>
+          </div>
+
+        </ng-template>
+      </y-map-clusterer>
+    </ng-container>
+  </y-map>
+
+</div>

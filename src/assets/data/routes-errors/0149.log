@@ -1,0 +1,14 @@
+[2025-08-15T16:15:39.680Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:56:33.967Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:28:41.234Z]
+lineSplit failed on boundary
+slug=kusa
+splitterType=LineString
+coordinates must contain numbers
+

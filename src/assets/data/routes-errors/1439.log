@@ -1,0 +1,14 @@
+[2025-08-15T16:17:15.730Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:58:24.662Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:30:38.089Z]
+lineSplit failed on boundary
+slug=troitsk
+splitterType=LineString
+coordinates must contain numbers
+

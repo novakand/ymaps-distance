@@ -1,0 +1,65 @@
+::ng-deep {
+    .p-sidebar-bottom {
+        position: absolute;
+        height: 10rem !important;
+    }
+
+    .sidebar-bottom {
+        height: 10rem !important;
+    }
+
+}
+
+.sidebar-bottom {
+    height: 5rem !important;
+    top: inherit !important;
+    position: absolute !important;
+    border: none;
+    right: 0;
+    left: 0;
+}
+
+.map-button-drawer {
+    position: absolute;
+    right: 16px;
+}
+
+:host ::ng-deep .slider-timeline .p-drawer-header {
+  padding: 0 !important;
+}
+
+
+::ng-deep {
+
+  .p-button-map.p-togglebutton.p-togglebutton-checked {
+    box-shadow: none;
+  }
+
+  .p-togglebutton-checked .p-togglebutton-content {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .icon-only-toggle {
+    .p-togglebutton-content {
+      flex: none;
+
+      &::before {
+        content: none !important;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        gap: 0;
+      }
+
+      .p-togglebutton-label {
+        display: none;
+      }
+
+    }
+
+    padding: 0;
+    line-height: 0;
+   
+  }
+}
+

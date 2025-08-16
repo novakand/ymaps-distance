@@ -1,0 +1,34 @@
+{
+  "transport": "Транспорт",
+  "date": "Дата",
+  "time": "Время",
+   "trackTime": "Время трека",
+  "coordinates": "Координаты",
+  "altitude": "Высота",
+  "speed": "Скорость",
+  "online": "Онлайн",
+  "history": "История",
+  "settings": "Настройки",
+  "language": "Язык",
+  "style": "Стиль карты",
+  "darkMode": "Темный режим",
+  "maps": {
+   "trackAltitudeLegend": "Высота", 
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "Трек",
+    "waypoints": "Путевые точки",
+    "autoPan": "Автопанорама"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "Нет данных для отображения",
+          "detail": "Пожалуйста, выберите другой период времени."
+        }
+      }
+    }
+}

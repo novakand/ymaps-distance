@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Михайловка, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 179282527,
+          "osm_type": "node",
+          "osm_id": 356772181,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Михайловка, муниципальный округ Михайловка, Волгоградская область, Южный федеральный округ, 403343, Россия",
+          "name": "Михайловка",
+          "postcode": "403343",
+          "county": "муниципальный округ Михайловка",
+          "state": "Волгоградская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "муниципальный округ Михайловка",
+            "level4": "Волгоградская область",
+            "level3": "Южный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q159081",
+            "wikipedia": "ru:Михайловка (город)",
+            "population": "58407",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.2342365,
+          50.0797109
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "transport": "运输",
+  "date": "日期",
+  "time": "时间",
+   "trackTime": "跟踪时间",
+  "coordinates": "坐标",
+  "altitude": "海拔",
+  "speed": "速度",
+  "online": "在线",
+  "history": "历史",
+  "settings": "设置",
+  "language": "语言",
+  "style": "地图样式",
+  "darkMode": "深色模式",
+  "maps": {
+   "trackAltitudeLegend": "高度",
+    "veryLow": "< 100 m",
+    "low": "100–200 m ",
+    "moderate": "200–300 m ",
+    "medium": "300–400 m ",
+    "high": "> 400 m ",
+    "track": "轨迹",
+    "waypoints": "途经点",
+    "autoPan": "自动漫游"
+  },
+  "toast": {
+      "notfound": {
+        "nodata": {
+          "summary": "无可显示的数据",
+          "detail": "请选择其他时间段。"
+        }
+      }
+    }
+}

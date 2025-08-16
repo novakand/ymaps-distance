@@ -1,0 +1,14 @@
+[2025-08-15T16:16:26.350Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T16:57:30.936Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:29:38.926Z]
+lineSplit failed on boundary
+slug=miass
+splitterType=LineString
+coordinates must contain numbers
+

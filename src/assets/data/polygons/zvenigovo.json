@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Звенигово, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 187912921,
+          "osm_type": "node",
+          "osm_id": 336523845,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Звенигово, городское поселение Звенигово, Звениговский район, Марий Эл, Приволжский федеральный округ, 425060, Россия",
+          "name": "Звенигово",
+          "postcode": "425060",
+          "city": "городское поселение Звенигово",
+          "county": "Звениговский район",
+          "state": "Марий Эл",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level8": "городское поселение Звенигово",
+            "level6": "Звениговский район",
+            "level4": "Марий Эл",
+            "level3": "Приволжский федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q136813",
+            "wikipedia": "ru:Звенигово",
+            "population": "11681",
+            "official_status": "ru:город",
+            "population:date": "2015-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.016105,
+          55.9718239
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<button class="layout-config-button p-link" type="button" (click)="onConfigButtonClick()">
+    <i class="pi pi-cog"></i>
+</button>
+
+<p-drawer [(visible)]="visible" position="right" [transitionOptions]="'.3s cubic-bezier(0, 0, 0.2, 1)'"
+    styleClass="w-full sm:w-[25rem]">
+
+
+
+    <ng-container *ngIf="isSettings">
+        <div class="config-panel-colors">
+            <span class="config-panel-label">Primary</span>
+            <div>
+                @for (primaryColor of primaryColors(); track primaryColor.name) {
+                <button type="button" [title]="primaryColor.name"
+                    (click)="updateColors($event, 'primary', primaryColor)"
+                    [ngClass]="{ 'active-color': primaryColor?.name === selectedPrimaryColor() }" [style]="{
+                        'background-color': primaryColor.name === 'noir' ? 'var(--text-color)' : primaryColor.palette['500']
+                    }"></button>
+                }
+            </div>
+        </div>
+
+        <div class="config-panel-colors">
+            <span class="config-panel-label">Surface</span>
+            <div>
+                @for (surface of surfaces; track surface.name) {
+                <button pButton type="button" [title]="surface.name" (click)="updateColors($event, 'surface', surface)"
+                    [ngClass]="{ 'active-color': selectedSurfaceColor() ? selectedSurfaceColor() === surface.name : layoutService.config().darkTheme ? surface.name === 'zinc' : surface.name === 'slate' }"
+                    [style]="{
+                        'background-color': surface.name === 'noir' ? 'var(--text-color)' : surface?.palette['500']
+                    }"></button>
+                }
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="flex-1">
+                <div class="config-panel-settings">
+                    <span class="config-panel-label">Ripple</span>
+                    <p-toggleswitch [(ngModel)]="ripple" />
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="config-panel-settings items-end">
+                    <span class="config-panel-label">RTL</span>
+                    <p-toggleswitch [ngModel]="isRTL" (ngModelChange)="onRTLChange($event)" />
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <div class="p-2">
+
+        <section class="pb-4 flex items-center justify-between border-b border-surface">
+            <span class="text-xl font-semibold">
+                Scale
+            </span>
+
+
+            <div class="flex items-center gap-2 border border-surface- py-1 px-2" style="border-radius: 30px;">
+                <button icon="pi pi-minus" (click)="decrementScale()" type="button" [disabled]="scale === scales[0]"
+                    pbutton=""
+                    class="p-element p-button-text p-button-rounded w-2rem h-2rem p-button p-component p-button-icon-only">
+                    <span class="p-button-icon pi pi-minus"></span>
+                </button>
+                <div class="flex gap-2 items-center">
+                    <i class="pi pi-circle-fill text-200" *ngFor="let s of scales"
+                        [ngClass]="{'text-primary': s === scale}"></i>
+                </div>
+                <button (click)="incrementScale()" icon="pi pi-plus" type="button"
+                    [disabled]="scale === scales[scales.length - 1]" pbutton=""
+                    class="p-element p-button-text p-button-rounded w-2rem h-2rem p-button p-component p-button-icon-only">
+                    <span class="p-button-icon pi pi-plus"></span></button>
+            </div>
+        </section>
+        <section  *ngIf="isThemes" class="py-4 flex items-center justify-between border-b border-surface">
+            <span class="text-xl font-semibold">
+                Themes
+
+            </span>
+            <div class="flex items-center gap-2 py-1 px-3">
+                <div class="w-6" *ngFor="let theme of componentThemes">
+                    <button type="button"
+                        class="cursor-pointer p-link w-[2rem] h-[2rem] rounded-full border flex-shrink-0 flex items-center justify-center"
+                        [ngStyle]="{'background-color': theme.color}"><i class="pi pi-check text-white"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="py-4 flex items-center justify-between border-b border-surface">
+            <span class="text-xl font-semibold">
+                Dark mode
+            </span>
+            <div class="flex items-center gap-2 py-1 px-3">
+                <div class="w-1/2">
+                    <p-toggleswitch [(ngModel)]="toggleDarkMode" />
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</p-drawer>

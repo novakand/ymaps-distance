@@ -1,0 +1,174 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1930",
+        "order": 1930,
+        "uuid": "eade5a2e-ff07-4851-b22c-65dc4eb0e214",
+        "color": "#911eb4",
+        "provider": "ymaps.route",
+        "routeName": "",
+        "duration": 2.852725661238079,
+        "durationText": "1 мин",
+        "durationInTraffic": 2.852725661238079,
+        "durationInTrafficText": "1 мин",
+        "durationBy4060": 1,
+        "durationBy4060Text": "0 мин",
+        "distance": 5.705451322476158,
+        "distanceText": "5 м",
+        "distanceCity": 6,
+        "distanceOutside": 0,
+        "distanceTotal": 6,
+        "hasTolls": false,
+        "bbox": [
+          61.42935635879495,
+          55.16183741160421,
+          61.42941983359295,
+          55.161873549642216
+        ],
+        "cities": [
+          "chelyabinsk"
+        ],
+        "steps": [
+          {
+            "index": 0,
+            "type": "driving",
+            "actionValue": "straight",
+            "actionText": "прямо",
+            "name": "",
+            "distance": 5.705451322476158,
+            "distanceText": "5 м",
+            "duration": 2.852725661238079,
+            "durationText": "1 мин",
+            "durationInTraffic": 2.852725661238079,
+            "durationInTrafficText": "1 мин",
+            "coordinates": [
+              61.429378,
+              55.161851999999996
+            ]
+          }
+        ],
+        "roadTypes": [
+          "driving"
+        ],
+        "start": {
+          "name": "Проспект Ленина, 26Ас2",
+          "request": [
+            55.16175,
+            61.42962
+          ],
+          "addressComponent": {
+            "region": "Челябинская область",
+            "city": "Челябинск",
+            "street": "проспект Ленина",
+            "country": "Россия",
+            "house": "26Ас2",
+            "countryCode": "RU",
+            "postalCode": "454007",
+            "address": "Россия, Челябинск, проспект Ленина, 26Ас2"
+          },
+          "coordinates": [
+            61.42962,
+            55.16175
+          ]
+        },
+        "end": {
+          "name": "Проспект Ленина, 26Ас2",
+          "request": [
+            55.161739,
+            61.429551
+          ],
+          "addressComponent": {
+            "region": "Челябинская область",
+            "city": "Челябинск",
+            "street": "проспект Ленина",
+            "country": "Россия",
+            "house": "26Ас2",
+            "countryCode": "RU",
+            "postalCode": "454007",
+            "address": "Россия, Челябинск, проспект Ленина, 26Ас2"
+          },
+          "coordinates": [
+            61.429551,
+            55.161739
+          ]
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            61.42942,
+            55.161874
+          ],
+          [
+            61.429378,
+            55.161851999999996
+          ],
+          [
+            61.429356,
+            55.161837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "start",
+        "name": "проспект Ленина, 26Ас2",
+        "addressComponent": {
+          "region": "Челябинская область",
+          "city": "Челябинск",
+          "street": "проспект Ленина",
+          "country": "Россия",
+          "house": "26Ас2",
+          "countryCode": "RU",
+          "postalCode": "454007",
+          "address": "Россия, Челябинск, проспект Ленина, 26Ас2"
+        },
+        "request": [
+          55.16175,
+          61.42962
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.42962,
+          55.16175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "end",
+        "name": "проспект Ленина, 26Ас2",
+        "addressComponent": {
+          "region": "Челябинская область",
+          "city": "Челябинск",
+          "street": "проспект Ленина",
+          "country": "Россия",
+          "house": "26Ас2",
+          "countryCode": "RU",
+          "postalCode": "454007",
+          "address": "Россия, Челябинск, проспект Ленина, 26Ас2"
+        },
+        "request": [
+          55.161739,
+          61.429551
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.429551,
+          55.161739
+        ]
+      }
+    }
+  ]
+}

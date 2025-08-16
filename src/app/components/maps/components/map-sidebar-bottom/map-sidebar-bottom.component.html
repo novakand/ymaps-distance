@@ -1,0 +1,105 @@
+<p-button
+  tooltipPosition="left"
+  positionLeft="-5"
+  *ngIf="isVisibleButton"
+  positionTop="-10"
+  (click)="toggle()"
+  [style]="{'width': '38px', 'height': '38px'}"
+  styleClass="p-button-map"
+  [ngClass]="{
+    'absolute right-4': true,
+    'bottom-5': !isVisible,
+    'bottom-27': isVisible
+  }"
+  [icon]="isVisible ? 'pi pi-angle-down' : 'pi pi-angle-up'"
+  class="transition-all duration-150 ease-[cubic-bezier(0,0,0.2,1)]"
+/>
+
+<ng-container [formGroup]="form">
+  <p-drawer
+    [(visible)]="isVisible"
+    [closable]="false"
+    modal="false"
+    appendTo=""
+    styleClass="sidebar-bottom slider-timeline"
+    [modal]="false"
+    (visibleChange)="onVisibleChange($event)"
+    position="bottom"
+  >
+
+
+    <ng-template #header>
+
+<div class="slider-container">
+      <p-slider
+        formControlName="timeline"
+        class="w-full absolute"
+        [min]="0"
+        [max]="trackLength - 1"
+        [step]="1"
+        tooltipPosition="top"
+        [disabled]="trackLength === 0"
+       tooltipOverflow="{{ getTimestampTooltip(form.get('timeline')!.value) }}"
+        [stickTo]="'.p-slider-handle'"
+        styleClass="slider-timeline"
+      />
+</div>
+
+    </ng-template>
+    <ng-template #content>
+      <div class="mt-4 grid grid-cols-3 items-center w-full">
+        <div class="flex justify-start gap-2">
+          <p-toggleButton
+            size="small"
+            onLabel=""
+            offLabel=""
+            [disabled]="trackLength === 0"
+            [onIcon]="'pi pi-pause'"
+            [offIcon]="'pi pi-play'"
+            formControlName="isPlaying"
+            styleClass="p-button-map icon-only-toggle p-button-icon-only  my-0"
+            [style]="{'width': '38px', 'height': '38px'}"
+          ></p-toggleButton>
+          <p-selectButton
+            [options]="speedMultiplierOptions"
+            formControlName="speedMultiplier"
+            [disabled]="trackLength === 0"
+            size="small"
+          ></p-selectButton>
+        </div>
+
+        <div class="flex justify-center items-center gap-8">
+          <div class="flex items-center gap-2">
+            <p-toggleswitch
+              inputId="track"
+              [disabled]="trackLength === 0"
+              formControlName="track"
+            />
+            <label for="track">{{ 'maps.track' | translate }}</label>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <p-toggleswitch
+              inputId="waypoints"
+              [disabled]="trackLength === 0"
+              formControlName="waypoints"
+            />
+            <label for="waypoints">{{ 'maps.waypoints' | translate }}</label>
+          </div>
+        </div>
+
+        <div class="flex justify-end">
+          <div class="flex items-center gap-2">
+            <p-toggleswitch
+              inputId="auto-pan"
+              [disabled]="trackLength === 0"
+              formControlName="autoPan"
+            />
+            <label for="auto-pan">{{ 'maps.autoPan' | translate }}</label>
+          </div>
+        </div>
+      </div>
+
+    </ng-template>
+  </p-drawer>
+</ng-container>

@@ -1,0 +1,12 @@
+
+
+<p-card header="" styleClass="card-legend p-2!">
+  <div class="flex flex-wrap items-center gap-4 text-sm">
+    <div class="flex flex-wrap justify-between gap-6">
+        
+          <p-toggleswitch  styleClass="mt-1" inputId="cities" [(ngModel)]="showCityBoundaries"
+        (ngModelChange)="onToggle($event)" />
+        <label class="block font-semibold mt-2">City boundaries</label>
+    </div>
+  </div>
+</p-card>

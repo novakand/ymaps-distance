@@ -1,0 +1,10 @@
+[2025-08-15T16:19:56.068Z]
+Unhandled exception
+coordinates must contain numbers
+
+[2025-08-15T17:33:43.548Z]
+lineSplit failed on boundary
+slug=bakal
+splitterType=LineString
+coordinates must contain numbers
+

@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "licence": "ODbL",
+    "query": "Александровск-Сахалинский, Россия"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 252233851,
+          "osm_type": "node",
+          "osm_id": 983942465,
+          "osm_key": "place",
+          "osm_value": "town",
+          "type": "city",
+          "label": "Александровск-Сахалинский, Александровск-Сахалинский муниципальный округ, Сахалинская область, Дальневосточный федеральный округ, 694420, Россия",
+          "name": "Александровск-Сахалинский",
+          "postcode": "694420",
+          "county": "Александровск-Сахалинский муниципальный округ",
+          "state": "Сахалинская область",
+          "country": "Россия",
+          "country_code": "ru",
+          "admin": {
+            "level6": "Александровск-Сахалинский муниципальный округ",
+            "level4": "Сахалинская область",
+            "level3": "Дальневосточный федеральный округ"
+          },
+          "extra": {
+            "wikidata": "Q103406",
+            "wikipedia": "ru:Александровск-Сахалинский",
+            "population": "9504",
+            "official_status": "ru:город",
+            "population:date": "2018-01-01"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.1591667,
+          50.8974983
+        ]
+      }
+    }
+  ]
+}
